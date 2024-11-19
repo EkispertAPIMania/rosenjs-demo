@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>rosen.js デモ（路線図ハイライト）</title>
+		<link rel="stylesheet" href="https://rmap.ekispert.jp/production/rosen.css" />
+		<script src="https://rmap.ekispert.jp/production/rosen.js"></script>
+		<style>
+			#map {
+				width: 100%;
+				height: 600px;
+			}
+		</style>
+		<script>
+			// 駅すぱあと路線図のAPIキー
+			window.API_KEY = 'YOUR_API_KEY';
+		</script>
+	</head>
+	<body>
+		<div>
+			<!-- サンプルの大回り乗車 -->
+			<textarea id="stations" rows="10">東京
+武蔵小杉
+尻手
+浜川崎
+鶴見
+大船
+茅ケ崎
+橋本(神奈川県)
+八王子
+川越
+武蔵浦和
+西国分寺
+新宿
+神田</textarea>
+			<button>検索</button>
+		</div>
+		<div id="map"></div>
+		<script src="app.js"></script>
+	</body>
+</html>
